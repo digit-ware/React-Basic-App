@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld'
 import BookList from './components/BookList';
+import Counter from './components/Counter';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </p>
         <p>
           <BookList />
+        </p>
+        <p>
+          <Counter />
         </p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

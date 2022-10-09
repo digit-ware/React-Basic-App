@@ -7,7 +7,7 @@ interface Props {
 const OneBook: React.FC<Props> = ({item}) => {
 
     return (
-        <div>Book {`${item.title} - ${item.description}`}</div>
+        <div key={item.id}>Book {`${item.title} - ${item.description}`}</div>
     )
 
 

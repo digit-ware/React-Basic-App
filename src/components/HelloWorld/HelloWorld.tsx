@@ -4,7 +4,9 @@ const HelloWorld: React.FC = () => {
 
 
     return (
-        <div>Hello World</div>
+        <>
+            <div>Hello World</div>
+        </>
     )
 }
 
