@@ -1,7 +1,13 @@
-const OneBook: React.FC = () => {
+import { Book } from "../../types/app"
+
+interface Props {
+    item: Book
+  }
+  
+const OneBook: React.FC<Props> = ({item}) => {
 
     return (
-        <div>OneBook</div>
+        <div>Book {`${item.title} - ${item.description}`}</div>
     )
 
 
