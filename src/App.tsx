@@ -5,6 +5,7 @@ import HelloWorld from './components/HelloWorld'
 import BookList from './components/BookList';
 import Counter from './components/Counter';
 import { AppContext, AppContextInterface } from './contexts/appContext';
+import HelloCountry from './components/HelloCountry';
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
           </p>
           <p>
             <Counter />
+          </p>
+          <p>
+            <HelloCountry text='Country' />
           </p>
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
