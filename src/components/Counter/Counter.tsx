@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { AppContext } from "../../contexts/appContext"
 
 const Counter: React.FC = () => {
 
     const [count, setCount] = useState(0)
+    const context = useContext(AppContext)
 
     const onClick = () => {
         setCount(count+1)
+        context.setCounter(count+2)
     }
 
     useEffect(() => {
